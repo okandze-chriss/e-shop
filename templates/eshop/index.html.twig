@@ -1,0 +1,133 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Eshop{% endblock %}
+
+{% block body %}
+
+
+    <div class=" container-fluid " style="padding-top: 10px; padding-bottom: 200px; margin-bottom: 40px; height: auto;background-color: #001d38; ">
+
+
+        <div class="row">
+
+            <div class="col-md-12 text-center animate__animated animate__fadeInLeftBig" style="font-size:45px; color: white;">
+                <b>Bienvenu chez </b>
+                <h1>Dakar Na Congo </h1>
+
+                <h2>
+                    Nous vous proposons la publicité de la mode africaine.
+                    Veillez consulter nos produits.
+                </h2>
+                <div>
+                    <button class="btn btn-success" style="padding: 20px; width: 158px">Femmes</button>
+                    <button class="btn btn-danger" style="padding: 20px; width: 158px">Hommes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid container__top">
+
+    <div class="text-center mb-3">
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+        <b style="font-size: 28px"> Sacs africains </b>
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+    </div>
+    <div class="row" >
+        {% for i in 0..11 %}
+            <div class="col-md-2 mb-4" >
+                            <div class="card " style="position: relative">
+                                <div class="text_center">
+                                    <img src="{{ asset('images/11.jpg') }}" class="img-fluid ">
+                                </div>
+
+                                <div class="content">
+                            <h1 style="color: black">Product Design</h1>
+                            <h3 style="color: black">UI/UX, Design</h3>
+                                    <div class="information">
+                                        <a href="" title="informations"> <i class="fa fa-2x fa-info-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="text-center mb-3">
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+        <b style="font-size: 28px"> Bracelets africains </b>
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+    </div>
+    <div class="row" >
+        {% for i in 0..11 %}
+            <div class="col-md-2 mb-4" >
+                    <div class="card" style="position: relative">
+                        <div class="text_center">
+                            <img src="{{ asset('images/6.jpg') }}" class="img-fluid">
+                        </div>
+                        <div class="content">
+                            <h1 style="color: black">Product Design</h1>
+                            <h3 style="color: black">UI/UX, Design</h3>
+                        <div class="information">
+                            <a href="" title="informations"> <i class="fa fa-2x fa-info-circle"></i></a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="text-center mb-3">
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+        <b style="font-size: 28px"> Chassures africains </b>
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+    </div>
+    <div class="row" >
+        {% for i in 0..11 %}
+            <div class="col-md-2 mb-4" >
+                    <div class="card " style="position: relative">
+                        <div class="text_center">
+                            <img src="{{ asset('images/3.jpg') }}" class="img-fluid">
+                        </div> 
+                        <div class="content">
+                            <h1 style="color: black">Product Design</h1>
+                            <h3 style="color: black">UI/UX, Design</h3>
+                        <div class="information">
+                            <a href="" title="informations"> <i class="fa fa-2x fa-info-circle"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+        {% endfor %}
+    </div>
+    <div class="text-center mb-3">
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+        <b style="font-size: 28px"> Vetements africains </b>
+        <i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i><i class="fa fa-leaf" style="font-size: 100%; color:#dc3545"></i>
+    </div>
+    <div class="row" >
+        {% for i in 0..11 %}
+            <div class="col-md-2 mb-4" >
+                    <div class="card" style="position: relative">
+                        <div class="text_center">
+                            <img src="{{ asset('images/4.jpg') }}" class="img-fluid">
+                        </div>    
+                        <div class="content">
+                             <h1 style="color: black">Product Design</h1>
+                            <h3 style="color: black">UI/UX, Design</h3>
+                        <div class="information">
+                            <a href="" title="informations"> <i class="fa fa-2x fa-info-circle"></i></a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+
+
+
+</div>
+
+{% endblock %}

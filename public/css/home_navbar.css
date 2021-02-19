@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    color: black;
+}
+.color_custom{
+    color: orangered;
+}
+.color_white{
+    color: white;
+}
+.price_custom{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.name_custom{
+    color: black;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.img_custom{
+    width: 1319px;
+    height: 100%;
+}
+.annonce_custom{
+    height: 110px;
+}
+.logo_custom{
+    height: 110px;
+    width: 110px;
+border-radius: 50px;
+}
+.navbar_background{
+    background-color: #001d38;
+    margin-bottom:0px;
+    padding: 10px !important;
+}
+.row .col-md-2 >a{
+    text-decoration: none;
+}
+.header_custom{
+    margin: 0;
+    padding-top: 50px;
+}
+
+.home_container{
+    margin-top: 5px;
+    height: 98vh;
+    color: white;
+    margin-bottom: 5px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+
+}
+
+/* images properties */
+.card_image_custom{
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+.home_bacground_footer{
+    background-color:#001d38;
+    color: white;
+}
+.home_bacground_footer a{
+    color: #17a2b8;
+}
+
+.container-fluid .row .col-md-3 .mt-3  .product-1 .btn:hover{
+    background-color:  #0b2e4e !important;
+}
+.text_center{
+    align-items: center;
+}

@@ -2,11 +2,242 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="{{ asset('css/home_navbar.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <div class=" container-fluid annonce_custom">
+<div class="row animate__animated animate__backInDown" style="" >
+    <div class="col-md-3" >
+            <div class="mt-3">
+                <div class="product-1  p-2" style="justify-content: space-between; display: flex; flex-direction: row">
+                    <div class="card_image_custom">
+                        <img  src="{{ asset('images/10.jpg') }}" style="height: 70px; width: 110px" />
+                    </div>
+
+                    <div style="">
+                        <button class="btn " style="padding: 20px; width: 138px; background-color: #0a2640;color: white" >Sacs</button>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="col-md-3" >
+        <div class="mt-3">
+            <div class="product-1  p-2" style="justify-content: space-between; display: flex; flex-direction: row">
+                <div class="card_image_custom">
+                    <img  src="{{ asset('images/6.jpg') }}" style="height: 70px; width: 110px" />
+                </div>
+
+                <div style="">
+                    <button class="btn" style="padding: 20px; width: 138px; background-color: #0a2640;color: white" >Bracelets</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-3" >
+        <div class="mt-3">
+            <div class="product-1  p-2" style="justify-content: space-between; display: flex; flex-direction: row">
+                <div class="card_image_custom">
+                    <img  src="{{ asset('images/3.jpg') }}" style="height: 70px; width: 110px" />
+                </div>
+
+                <div style="">
+                    <button class="btn btn-info" style="padding: 20px; width: 138px; background-color: #0a2640;color: white" >Chaussures</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-3" >
+        <div class="mt-3">
+            <div class="product-1  p-2" style="justify-content: space-between; display: flex; flex-direction: row">
+                <div class="card_image_custom">
+                    <img  src="{{ asset('images/4.jpg') }}" style="height: 70px; width: 110px" />
+                </div>
+
+                <div style="">
+                    <button class="btn btn-info" style="padding: 20px; width: 138px; background-color: #0a2640;color: white" >Vetements</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+    </div>
+
+    <nav class=" sticky-top  navbar navbar-expand-lg navbar_background" >
+        <a class="home_logo_site mr-6" href="">
+            <img style="height: 50px; width: 50px; border-radius: 50px" src="{{ asset('images/logo.jpg')}}" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars fx-2 navbar_icon_color" ></i>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent-333" style="justify-content: center; display: flex">
+            <ul class="navbar-nav  " style=" " >
+                <!--
+                <li class="nav-item active color_white" style="justify-content: space-between; display: flex">
+                   <b style="margin-left: 30px; font-size: 18px">Contactez nous au :</b>
+                    <a class=" ml-2 color_white" href="tel:+221 78 115 05 85">
+                        <span style="font-size: 18px; color:yellow">  +221 78 115 05 85</span>
+                    </a>
+                </li>
+                -->
+
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+
+
+                <li class="nav-item active">
+                    <a class="nav-link color_white" href="#">
+                        Accueil
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a class="nav-link color_white" href="#">
+                        Promos
+                    </a>
+                </li>
+                <li>
+                    <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-2">
+                        <input class="form-control form-control-sm mr-2 ml-3 w-50" type="text" size="30" placeholder="Search" aria-label="Search" />
+                        <button type="submit" class="navbar_search_button" style="background-color: inherit; border: none; color: white"><i class="fas fa-search fx-4 navbar_icon_color" ></i></button>
+                    </form>
+                </li>
+                <li class="nav-item avatar dropdown ">
+                    <a class="nav-link dropdown-toggle color_white " id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fas fa-user fx-4" ></i>
+                    </a>
+                    <div class="dropdown-menu mr-9 text-center" aria-labelledby="navbarDropdownMenuLink-5" >
+                        <a class=" " href="/connexion">Connexion</a>
+                        <hr></hr>
+                        <a class=" " href="/inscription">Inscription</a>
+                        <hr></hr>
+                        <a class=" " href="#">Photo du compte</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item active">
+                    <a class="nav-link color_white" href="#">
+                        <i class="fa fa-shopping-basket "></i>
+                        <span class="badge badge-primary badge-pill">0</span>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+        {% block body %}
+
+        {% endblock %}
+    <footer id="footer" class="page-footer  mt-4 home_bacground_footer" style="padding-left:0px">
+        <div class="text-center home_bacground_line py-4">
+            <a rel="nofollow" target="_blank" id="footer-link-youtube" href="https://www.youtube.com">
+                <i class="fab fa-youtube white-text mr-4"> </i>
+            </a>
+            <a rel="nofollow" target="_blank" id="footer-link-facebook" href="https://www.facebook.com/mdbootstrap">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <a rel="nofollow" target="_blank" id="footer-link-twitter" href="https://twitter.com/MDBootstrap">
+                <i class="fab fa-twitter white-text"> </i>
+            </a>
+        </div>
+        <div class="container text-center text-md-left mt-5 home_bacground_color">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3  home_foot_color mb-4 ">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Entreprise</strong>
+                    </h6>
+                    <hr class=" mb-4 home_hr_color" />
+                    <p>
+                        <a id="footer-link-faq" href="">Dakar Na Congo <i class="fa fa-chalkboard-teacher"></i></a>
+                    </p>
+                    <p>
+
+                        Faire son shopping en ligne c’est simple et rapide, il vous suffit de visiter Estore.
+                        sn à partir de votre smartphones, Pc ou tablettes, choisir la catégorie qui vous intéresse.
+                    </p>
+
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 home_foot_color mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>CERVICE CLIENT</strong>
+                    </h6>
+                    <hr class=" mb-4 home_hr_color" />
+                    <p>
+                        <a id="footer-link-jquery" href="">Aide & FAQ</a>
+                    </p>
+                    <p>
+                        <a id="footer-link-angular" href="">Méthodes de livraison</a>
+                    </p>
+                    <p>
+                        <a id="footer-link-react" href="">Méthodes de paiement</a>
+                    </p>
+                    <p>
+                        <a id="footer-link-vue" href="">Signaler un Produit</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 home_foot_color  company">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>A PROPOS</strong>
+                    </h6>
+                    <hr class=" mb-4 home_hr_color" />
+                    <p>
+                        <a id="footer-link-team" href="">
+                            Qui sommes-nous  </a>
+                    </p>
+                    <p>
+                        <a id="footer-link-team" href="">
+                            Conditions Générales d'usage</a>
+                    </p>
+                    <p>
+                        <a id="footer-link-company" href="">
+                            Carrières</a>
+                    </p>
+                    <p>
+                        <a id="footer-link-formedia" href="">
+                            Politique de Confidentialité</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright py-3 text-center home_bacground_lines">
+            © 2020 Copyright:
+            <a href="">
+                <strong> DevApplication.com</strong>
+            </a>
+        </div>
+    </footer>
         {% block javascripts %}{% endblock %}
+        <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
